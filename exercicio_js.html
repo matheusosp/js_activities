@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java 11 atividades</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+1 - Faca um programa que leia um numero inteiro e imprima na tela.<br> 
+2 - Faca um programa que leia um numero real e o imprima. <br>
+3 - Peca ao usuario para digitar tres valores inteiros e imprima a soma deles. <br>
+4 - Leia um numero real e imprima o resultado do quadrado desse número. <br>
+5 - Leia um numero real e imprima a quinta parte deste numero. <br>
+6 - Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit <br>
+7 - Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius. <br>
+8 - Leia uma temperatura em graus Kelvin e apresente-a convertida em graus Celsius. <br>
+9 - Leia uma Temperatura em graus Celsius e apresente-a convertida em graus Kelvin. <br>
+10 - Leia uma velocidade em km/h e apresente-a convertida em m/s. <br>
+11 - Leia uma velocidade em m/s e apresente-a convertida em km/h. <br>
+<button onclick="ver()">Escolha uma opção</button>        
+<script>
+           function ver(){
+               opcao = prompt("Digite a opção: ");
+               
+                   if(opcao == "1"){
+                   num = parseInt(prompt("Número: "));
+                   alert(num);
+               }
+                 if(opcao == "2"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(num);
+               }
+                 if(opcao == "3"){
+                   num = parseInt(prompt("Número: "));
+                   num1 = parseInt(prompt("Número: "));
+                   num2 = parseInt(prompt("Número: "));
+                   alert(num+num1+num2);
+               }
+                 if(opcao == "4"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(Math.pow(num, 2));
+               }
+                 if(opcao == "5"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(num*0.20);
+               }
+                 if(opcao == "6"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(num*1.8+32);
+               }
+                 if(opcao == "7"){
+                   num = parseFloat(prompt("Número: "));
+                   alert((num-32)/1.8);
+               }
+                 if(opcao == "8"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(num-273.15);
+               }
+                 if(opcao == "9"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(num+273.15);
+               }
+                 if(opcao == "10"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(num/3.6);
+               }
+                 if(opcao == "11"){
+                   num = parseFloat(prompt("Número: "));
+                   alert(num*3.6);
+               }
+           }
+        </script>
+    </body>
+</html>
